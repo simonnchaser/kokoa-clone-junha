@@ -1,0 +1,50 @@
+.user-component {
+  justify-content: space-between;
+}
+/* 지금은  */
+.user-component,
+.user-component__column:first-child {
+  display: flex;
+  align-items: center;
+}
+.user-component__avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 30px;
+  margin-right: 20px;
+}
+.user-component__title {
+  font-weight: 600;
+  font-size: 22px;
+}
+.user-component__title--not-bold {
+  font-weight: 400;
+}
+.user-component__subtitle {
+  margin-top: 10px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 17px;
+}
+.user-component__avatar--xl {
+  width: 80px;
+  height: 80px;
+  border-radius: 35px;
+}
+.user-component__avatar--sm {
+  width: 60px;
+  height: 60px;
+  border-radius: 26px;
+}
+.user-component__column:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: rgba(0, 0, 0, 0.4);
+}
+.user-component__time {
+  display: block;
+  margin-bottom: 10px;
+}
+/* 우린 지금 Chats screen에 있는 프로필을 기본값을 두고 코딩하고 있는거야
+ Friends screen에 있는 프로필들은 사이즈나 다른 디테일(subtitle)만 수정해주면 되는거지*/
+/* 기획안을 보면서 반복되는 것들을 component로 만들면 작업하기 아주 쉬워질거야 */

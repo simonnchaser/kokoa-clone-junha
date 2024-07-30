@@ -1,0 +1,39 @@
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+.nav {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f9f9fa;
+  padding: 20px 50px;
+  border-top: 1px solid rgba(104, 102, 102, 0.266);
+  position: fixed;
+  bottom: 0px;
+}
+.nav__link {
+  color: #2f363e;
+  position: relative;
+}
+.nav__notification {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+}
+.nav__signal {
+  background-color: tomato;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  position: absolute;
+  left: 30px;
+}
+
+/* 어 왜 width,height 값이 반영되지 않지?? span은 inline 요소이니까 -> display block으로 바꿔주자! */
+/* 사각형을 원으로 만들고 싶다면 사각형 width 값의 절반을 radius값으로 써주면 된다! */
+
+/* navigation bar를 영원히 아래쪽에 붙어있도록 하기 위해서는 어떤 코드를 작성해줘야 할까 */
+/* 네비게이션바에 position: fixed를 설정할 때, width가 반으로 줄어드는 문제는 
+부모 요소의 너비가 100%가 아니라서 발생할 수 있습니다. position: fixed를 사용하면 
+요소가 문서의 흐름에서 벗어나기 때문에 너비를 명시적으로 설정해줘야 합니다. */
+/* ellipse icon은 어디로 갔을까? 검사를 해보면 padding 때문에 문제가 생겼다는 것을 알 수 있어 */

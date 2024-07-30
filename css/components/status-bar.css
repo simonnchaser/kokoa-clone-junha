@@ -1,0 +1,31 @@
+.status-bar {
+  display: flex;
+  justify-content: center;
+  padding: 5px 3px;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+.status-bar_column {
+  width: 33%;
+}
+.status-bar_column:first-child span {
+  margin-right: 5px;
+}
+.status-bar_column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+.status-bar_column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.status-bar_column .fa-battery-full {
+  margin: 0px 5px;
+}
+/* status-bar부분을 보면 시계가 중심축에 위치해 있지 않아 보다 오른쪽으로 치우쳐져 있지 그 이유는 
+  No Service 파트가 더 길고 충전량 파트가 보다 short한 상태이기 때문에 그런거야. 즉, 각자 다른 width를 가지고있는거지 
+  그렇다면 solution은?? justify-content대신 컨테이너 하나를 말그대로 중심에 놓는 css hack(기술)을 보여줄께  */
