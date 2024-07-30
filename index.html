@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to KakaoTalk</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar_column">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar_column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar_column">
+        <span>110%</span>
+        <i class="fa-solid fa-battery-full fa-lg"></i>
+        <i class="fa-solid fa-bolt"></i>
+      </div>
+    </div>
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to KakaoTalk</h1>
+      <p class="welcome-header__text">
+        If you have a Kakao Account, log in with your email or phone number.
+      </p>
+    </header>
+    <form id="login-form" action="friends.html" method="get">
+      <input name="username" type="text" placeholder="Email or phone number" />
+      <input name="password" type="password" placeholder="Password" />
+      <input type="submit" value="Log In" />
+      <a href="#">Find Kakao Account or Password</a>
+    </form>
+    <script
+      src="https://kit.fontawesome.com/b0290410ae.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+<!-- 만약 status_bar column이라고 작성한다면 이건 2개의 classname을 가졌다고 볼 수 있을거야
+하지만 status_bar_column이렇게 쓰면 연결된 하나의 classname을 가진거지 이렇게 쓰기를 권장해
+status-bar에 있는 column이라고 명시해준다면 보다 이해하기 수월하겠지! 부모_자식 이 형태로!-->
+
+<!-- id인지 class인지 나중에 가서는 헷갈릴 수 있기 때문에 class로 통일하자는 관습이 생겨남 
+ 이렇게 통일을 했을 때 우린 dot하나만 붙여줌으로써 훨씬 더 수월하게 코딩할 수 있겠지  -->
+
+<!-- 우리가 이 서비스를 코딩할때 몇개의 form을 만들까? maybe 1. 
+ 그렇다고 한다면 우린 그냥 id 속성을 사용해서 구분지어주면 될거야 
+ header 태그는 앞으로도 자주 사용할 것이기 때문에 반드시 class를 사용해서 어떤 header인지 구체적인 값을 적어줘야겠지
+ 그래서 미리 우리가 어떤걸 만들지 생각해놔야 해 -->
+
+<!-- 링크를 form안으로 옮기는 이유가 있을거야 나중에 살펴보자.
+ 이제 css에서 id:login-form을 통해 링크를 가리킬 수 있게 되겠네 
+ 링크는 앞으로도 많이 사용될거라 이거 하나만을 위한 id나 class를 추가하고 싶지 않거든-->
